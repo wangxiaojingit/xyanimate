@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    html,body{
+        height:100%;
+    }
+    .main{
+      height:100%;
+      background:url("images/bg.webp") center center no-repeat;
+      background-size:cover;
+      overflow:hidden;
+    }
+    .westBox{
+        height:240px;
+        width:780px;
+        margin:280px auto 0 auto;
+
+    }
+    .westBox>div{
+       float:left;
+    }
+    
+    .west1{
+        width:200px;
+        height:180px;
+        background:url("images/west_01.png") no-repeat;
+        animation:west1 1s steps(8) infinite;
+    }
+    .west2{
+        width:200px;
+        height:180px;
+        background:url("images/west_02.png") no-repeat;
+        animation:west1 1s steps(8) infinite;
+        
+    }
+    .west3{
+        width:170px;
+        height:240px;
+        background:url("images/west_03.png") no-repeat;
+        margin-top: -33px;
+        animation:west3 1s steps(8) infinite;
+    }
+    .west4{
+        width:210px;
+        height:200px;
+        background:url("images/west_04.png") no-repeat;
+        animation:west4 1s steps(8) infinite;
+    }
+
+    @keyframes west1{
+        0%{
+         background-position:0 0;
+        }
+        100%{
+          background-position:-1600px 0;  
+        }
+    }
+    @keyframes west3{
+        0%{
+         background-position:0 0;
+        }
+        100%{
+          background-position:-1360px 0;  
+        }
+    }
+    @keyframes west4{
+        0%{
+         background-position:0 0;
+        }
+        100%{
+          background-position:-1680px 0;  
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="westBox">
+            <div class="west1"></div>
+            <div class="west2"></div>
+            <div class="west3"></div>
+            <div class="west4"></div>
+        </div>
+    </div>
+</body>
+</html>
